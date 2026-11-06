@@ -38,3 +38,6 @@ jobs:
 
       - id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          # APK ~90MB nên GitHub xử lý lâu, mặc định 10 phút dễ bị timeout
+          timeout: 1800000
